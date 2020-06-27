@@ -2,18 +2,16 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Header from "../components/header"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
 
 export default ({ data }) => (
-<div>
+  <Layout>
   <meta charSet="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <title>ESSENTIALS</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossOrigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="images/icon.png" type="image/png" />
-  <Header />
   <section className="hero">
     <figure>
       <Img 
@@ -71,8 +69,7 @@ export default ({ data }) => (
       />
     </figure>
   </section>
-  <Footer />
-</div>
+  </Layout>
 )
 export const query = graphql`
   query {
