@@ -4,8 +4,11 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 
+import SEO from "../components/seo"
+
 export default ({ data }) => (
   <Layout>
+  <SEO />
   <meta charSet="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <title>ESSENTIALS</title>

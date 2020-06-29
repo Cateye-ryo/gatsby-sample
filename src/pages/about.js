@@ -6,8 +6,15 @@ import Layout from "../components/layout"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUtensils, faCheckSquare } from "@fortawesome/free-solid-svg-icons"
 
-export default ({ data }) => (
+import SEO from "../components/seo"
+
+export default ({ data, location }) => (
   <Layout>
+    <SEO
+      pagetitle="ESSENTIALSについて"
+      pagedesc="食べ物についての情報を発信しているサイトです"
+      pagepath={location.pathname}
+    />
     <div>
       <meta charSet="UTF-8" />
       <meta name="viewport" content="width=device-width" />
