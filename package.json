@@ -27,7 +27,9 @@
     "@fortawesome/free-regular-svg-icons": "5.13.1",
     "@fortawesome/free-brands-svg-icons": "5.13.1",
     "gatsby-plugin-react-helmet": "3.3.6",
-    "react-helmet": "6.1.0"
+    "react-helmet": "6.1.0",
+    "gatsby-plugin-manifest": "2.4.12",
+    "gatsby-plugin-offline": "3.2.13"
   },
   "devDependencies": {
     "prettier": "2.0.5"
