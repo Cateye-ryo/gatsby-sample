@@ -10,7 +10,8 @@ module.exports = {
     title: `ESSENTIALS`,
     description: `おいしい食材と食事を探究するサイト`,
     lang: `ja`,
-    siteUrl: `https://hopeful-bhaskara-35c98a.netlify.app/`
+    siteUrl: `https://hopeful-bhaskara-35c98a.netlify.app/`,
+    locale: `ja_JP`
   },
   plugins: [
     `gatsby-transformer-sharp`,
