@@ -3,6 +3,7 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+require('dotenv').config();
 
 module.exports = {
   /* Your site config here */
@@ -37,5 +38,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENT_SPACE_ID,
+        accessToken: process.env.CONTENT_ACCESS_TOKEN,
+        host: process.env.CONTENT_HOST,
+      },
+    },
   ],
 }
