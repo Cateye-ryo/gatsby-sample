@@ -60,6 +60,7 @@ export default ({ data, location }) => (
     </div>
   </Layout>
 )
+
 export const query = graphql`
   query {
     about: file(relativePath: { eq: "about.jpg" }) {
